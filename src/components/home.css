@@ -1,0 +1,15 @@
+.bp
+{
+    /* background-image:url("https://img.freepik.com/free-vector/abstract-blue-geometric-shapes-background_1035-17545.jpg?w=2000");
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover; */
+
+    padding-top: 200px;
+    padding-left: 100px;
+}
+.heading{
+    align-items: center;
+    text-align: center;
+    font-size: large;
+}

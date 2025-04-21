@@ -1,0 +1,36 @@
+.anil
+{
+    background-image:url("https://cdn.vectorstock.com/i/1000x1000/80/58/young-man-peeping-from-behind-a-wall-vector-22108058.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-right:500px;
+}
+.login
+{
+    margin-left:750px;
+}
+.greet
+{
+    font-size:40px;
+    font-weight:bold;
+
+}
+.caution
+{
+    font-family: fantasy;
+    font-size: medium;
+}
+.bottom
+{
+    margin-top:50px;
+}
+.log
+{
+    font-size:60px;
+    color:rgb(62, 42, 61)
+}
+.uname
+{
+    font-weight: bold;
+}
