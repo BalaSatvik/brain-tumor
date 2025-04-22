@@ -13,7 +13,6 @@ const Chat = () => {
               },
             ]);
           
-            //Extra
             const [ user, setLoginUser] = useState({});
             
             var props={
