@@ -1,18 +1,19 @@
 import React,{useState,useRef,useEffect} from 'react';
-import { companyInfo } from '../companyInfo';
+// import { companyInfo } from '../companyInfo';
 import ChatbotIcon from './ChatbotIcon';
 import ChatForm from './ChatForm';
 import ChatMessage from './ChatMessage';
 
 const Chat = () => {
-    const [chatHistory,setChatHistory]=useState([
-              {
-                hideInChat:true,
-                role:"model",
-                text:companyInfo,
-              },
-            ]);
-          
+    // const [chatHistory,setChatHistory]=useState([
+    //           {
+    //             hideInChat:true,
+    //             role:"model",
+    //             // text:companyInfo,
+    //             text:""
+    //           },
+    //         ]);
+    const [chatHistory,setChatHistory]=useState([]);
             const [ user, setLoginUser] = useState({});
             
             var props={
