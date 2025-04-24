@@ -1,4 +1,4 @@
-import {useState} from "react"
+import {useState,useEffect} from "react"
 import './App.css';
 import Login from './components/login'
 import Home from './components/home'
@@ -50,8 +50,13 @@ const App = () => {
   //   chatBodyRef.current.scrollTo({top: chatBodyRef.current.scrollHeight, behavior: "smooth"});
   // },[chatHistory]);
   
-  
-    const [ user, setLoginUser] = useState({});
+  const [ user, setLoginUser] = useState({});
+  useEffect(() => {
+    const storedUser = localStorage.getItem("user");
+    if (storedUser) {
+      setLoginUser(JSON.parse(storedUser)); // Restore user from localStorage
+    }
+  }, []);
     
     var props={
       user:user,

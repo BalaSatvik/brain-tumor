@@ -27,14 +27,25 @@ const Login = ({ setLoginUser}) => {
         })
     }
 
+    // const login = () => {
+    //     axios.post("http://localhost:3001/login", user)
+    //     .then(res => {
+    //         setLoginUser(res.data.user)
+    //         console.log("send");
+    //         navigate("/")
+    //     })
+    // }
+
     const login = () => {
         axios.post("http://localhost:3001/login", user)
         .then(res => {
-            setLoginUser(res.data.user)
-            console.log("send");
-            navigate("/")
-        })
-    }
+            if (res.data.user) {
+                setLoginUser(res.data.user);
+                localStorage.setItem("user", JSON.stringify(res.data.user)); // Save to localStorage
+                navigate("/");
+            }
+        });
+    };
    
 
     return (
