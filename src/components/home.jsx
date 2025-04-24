@@ -24,6 +24,8 @@ const Home = ({details}) => {
     const [processing1, setProcessing1] = useState(false)
     const [processing2, setProcessing2] = useState(false)
 
+    
+
 
     const onSelectFile = e => {
         if (!e.target.files || e.target.files.length === 0) {
@@ -154,7 +156,9 @@ const Home = ({details}) => {
               <Typography variant="h6" component="div" sx={{ flexGrow: 1 }} className="heading">
                 Brain - Tumor
               </Typography>
-              <Button color="inherit" onClick={() => details.setLoginUser({})}>Logout</Button>
+              <Button color="inherit" onClick={() => {
+                localStorage.removeItem("user");
+                details.setLoginUser({})}}>Logout</Button>
             </Toolbar>
           </AppBar>
           <br />

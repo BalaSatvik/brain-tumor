@@ -51,13 +51,14 @@ const App = () => {
   // },[chatHistory]);
   
   const [ user, setLoginUser] = useState({});
+    
   useEffect(() => {
     const storedUser = localStorage.getItem("user");
     if (storedUser) {
       setLoginUser(JSON.parse(storedUser)); // Restore user from localStorage
     }
   }, []);
-    
+  
     var props={
       user:user,
       setLoginUser:setLoginUser
